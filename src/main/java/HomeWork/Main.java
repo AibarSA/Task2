@@ -21,11 +21,7 @@ public class Main {
 
         boolean res = true;
         for (int i = 0; i < m.length - 1; i++) {
-            if (Integer.parseInt(m[i]) > Integer.parseInt(m[i + 1])) {
-                res = false;
-            } else {
-                continue;
-            }
+            if (Integer.parseInt(m[i]) > Integer.parseInt(m[i + 1])) res = false;
         }
         return res;
     }
