@@ -14,11 +14,11 @@ public class Main {
 
     public static boolean isItInAscendingOrder(int number) {
 
-        String stringNum = String.valueOf(number);
-        String[] massive = new String[stringNum.length()];
+        String strRepresOfNumber = String.valueOf(number);
+        String[] massive = new String[strRepresOfNumber.length()];
 
-        for (int i = 0; i <stringNum.length() ; i++) {
-            massive [i] = String.valueOf(stringNum.charAt(i));
+        for (int i = 0; i <strRepresOfNumber.length() ; i++) {
+            massive [i] = String.valueOf(strRepresOfNumber.charAt(i));
         }
 
         boolean res = true;
