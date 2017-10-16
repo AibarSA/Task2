@@ -3,10 +3,12 @@ package HomeWork;
 public class Main {
     public static void main(String[] args) {
 
-        boolean number1 = isItInAscendingOrder(123456);
-        boolean number2 = isItInAscendingOrder(6153);
+        boolean number1 = isItInAscendingOrder(12345);
+        boolean number2 = isItInAscendingOrder(321);
+        boolean number3 = isItInAscendingOrder(224);
         System.out.println(number1);
         System.out.println(number2);
+        System.out.println(number3);
 
     }
 
@@ -21,7 +23,7 @@ public class Main {
 
         boolean res = true;
         for (int i = 0; i < m.length - 1; i++) {
-            if (Integer.parseInt(m[i]) > Integer.parseInt(m[i + 1])) res = false;
+            if (Integer.parseInt(m[i]) >= Integer.parseInt(m[i + 1])) res = false;
         }
         return res;
     }
