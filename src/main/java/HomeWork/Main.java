@@ -12,18 +12,18 @@ public class Main {
 
     }
 
-    public static boolean isItInAscendingOrder(int a) {
+    public static boolean isItInAscendingOrder(int number) {
 
-        String s = String.valueOf(a);
-        String[] m = new String[s.length()];
+        String stringNum = String.valueOf(number);
+        String[] massive = new String[stringNum.length()];
 
-        for (int i = 0; i <s.length() ; i++) {
-            m [i] = String.valueOf(s.charAt(i));
+        for (int i = 0; i <stringNum.length() ; i++) {
+            massive [i] = String.valueOf(stringNum.charAt(i));
         }
 
         boolean res = true;
-        for (int i = 0; i < m.length - 1; i++) {
-            if (Integer.parseInt(m[i]) >= Integer.parseInt(m[i + 1])) res = false;
+        for (int i = 0; i < massive.length - 1; i++) {
+            if (Integer.parseInt(massive[i]) >= Integer.parseInt(massive[i + 1])) res = false;
         }
         return res;
     }
